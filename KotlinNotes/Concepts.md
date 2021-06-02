@@ -127,9 +127,9 @@ for(i in array.indeices){
     + Closure 指的是函数
     + case: 
     ```
-    var sum =0
+    var sum =0 //sum is bound variable
     ints.filter {it>0}.forEach{
-        sum+=it
+        sum+=it // sum is free variable
     }
     print(sum)
     ```
@@ -138,3 +138,36 @@ for(i in array.indeices){
 |---|---|
 |free variable|variable that used in closure but defined outside closure|
 |bound variable|local variable/golable variable|
+
+## Classes and objects
+
+### Classes
+- 类成员
+    + 构造器和初始化
+    + 方法
+    + 属性
+    + 嵌套类和内部类
+    + 对象声明
+
+### 属性
+- 获取属性，直接使用属性名`className.propertyName`
+- 声明属性的完整语法: 
+```
+// []： 表明可选项
+var <propertyName>[:<propertyType] [=<property_initializer]
+    [getter]
+    [setter]
+```
+- `setter`的默认参数名为 value: 
+```
+var id:Int =9
+    set(value){
+        field = value //
+    }
+```
+- 修改属性的可见性
+```
+var setterVisibility : String ="abc"
+    private set
+```
+- 
