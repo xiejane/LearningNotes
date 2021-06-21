@@ -1,4 +1,5 @@
 # Concepts
+[TOC]
 
 ## Types
 
