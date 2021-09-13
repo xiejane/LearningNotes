@@ -43,3 +43,34 @@ $ ssh -T git@github.com
 
 ## GitHub设置ssh key后push代码依旧需要输入用户名、密码
 [参考博文-CSDN](https://blog.csdn.net/weixin_38515203/article/details/89426242)
+
+## 分支管理
+
+### 1. 撤销操作
+- 重新提交
+```
+$ git commit --amend
+```
+- 取消暂存的文件
+```
+$ git reset HEAD <file>
+```
+- 撤销对文件的修改
+```
+$ git checkout -- <file>
+```
+- windows下git bash中文字符被转义，不能正常显示解决办法
+```
+$ git config --global core.quotepath false
+```
+
+### 2. 删除分支
+- 删除远程分支
+> git fetch -p origin //清除远程分支的本地缓存  
+> git branch -a //查看远程分支  
+> git push origin --delete ${branchName} //删除远程分支
+
+- 删除本地分支
+> git branch //查看本地分支
+> git branch -d ${branchName} //删除本地分支
+> git branch -D ${branchName} //强制删除本地分支

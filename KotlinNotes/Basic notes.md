@@ -23,7 +23,7 @@ Kotlin 是一种静态类型的语言，意味着，类型将在编译时解析�
 + 类型转换
     + 较大类型可以隐式转换为较小类型
     + 较小类型不能隐式转换为较大类型
-        * toByte():Byte
+        * toByte(): Byte
         * toShort(): Short
         * toInt(): Int
         * toLong(): Long

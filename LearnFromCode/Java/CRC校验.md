@@ -26,7 +26,7 @@
         int crc16=0xffff;
         int pl = 0xa001;
         for (int i=start;i<start+len;i++){
-            crc16 = crc16 ^ data[i];
+            crc16^=(0x00ff & (int)data[i]);
             for (int j=0;j<8;j++){
                 int temp = crc16 &0x0001;
                 if (temp == 1){
