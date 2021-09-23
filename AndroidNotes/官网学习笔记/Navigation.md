@@ -66,3 +66,4 @@ dependencies {
         * Select `Navigation` from the `Resource type` drop-down list, and then click `OK`.
     + AS 导航图窗口
     ![导航窗口](../../resources/navigation_editor.png)
+

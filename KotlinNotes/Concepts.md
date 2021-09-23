@@ -3,11 +3,11 @@
 
 ## Types
 
-- smart casts: 可使用对象
-    + `val`本地变量：
-    + `val`属性： private、internal属性，在同一个模块内进行了校验
-    + `var`本地变量：在比较和使用之间没有被改变（包括没有被lambda表达改变，不是 local delegated property)
-    + `var`属性 ：不能被其他代码改变
+- smart casts: 智能类型判断可使用的对象：
+    + `val`本地变量：always, 除了`local delegated properties`
+    + `val`属性：  if the property is private or internal or if the check is performed in the same module where the property is declared. Smart casts cannot be used on open properties or properties that have custom getters.
+    + `var`本地变量：在比较和使用之间没有被改变时可以使用（包括没有被lambda表达改变，不是 local delegated property)
+    + `var`属性：不能，因为该类型的变量能被其他代码改变
 
 - delegated property:
     +  lazy properties
