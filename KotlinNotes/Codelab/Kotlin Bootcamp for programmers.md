@@ -1,7 +1,7 @@
 # Kotlin Bootcamp for programmers
 
 ## 1. Get starts
-
+[codelab](https://developer.android.com/codelabs/kotlin-bootcamp-introduction#8)
 Kotlin 专注于干净、易读和代码安全。
 kotlin的优势
 - 健壮的代码
